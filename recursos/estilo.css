@@ -1,0 +1,200 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 80px 40px 6fr 30%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "cabecalho"
+        "cabecalho2"
+        "principal"
+        "rodape";
+    overflow-y: scroll;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    height: 80px;
+    background-color: rgb(202, 110, 110);
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 2fr 0.5fr;
+    padding: 0px 5px 0px 50px;
+    margin: 0px;
+    z-index: 100;
+}
+
+.cabecalho div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+    margin: 0px;
+}
+
+.cabecalho h1 {
+    margin: 0px;
+    font-size: 25px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+    margin: 0px 0px 0px 40px;
+}
+
+.cabecalho .menu a {
+    color: black;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 40px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #dedede;
+    border-radius: 5px;
+}
+
+.cabecalho h3 {
+    margin: 0px;
+}
+
+.cabecalho2 {
+    grid-area: cabecalho2;
+    height: 40px;
+    background-color: #999;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.5fr 0.5fr;
+    padding: 0px 5px 0px 50px;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+    z-index: 50;
+}
+
+ .cabecalho2 div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho2 .menu2{
+    color: black;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+    height: 28px;
+    width: 350px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+form button {
+    cursor: pointer;
+    font-size: 1rem;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.menor, .menor h3 {
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    align-content: flex-end;
+}
+
+.itens a{
+    height: fit-content;
+    font-size: 90%;
+    box-sizing: border-box;
+    width: max-content;
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.itens a:hover {
+    color: black;
+    text-decoration: underline;
+    width: max-content;
+    background-color: inherit;
+}
+
+.menu2 a:hover {
+    color: black;
+    width: max-content;
+    background-color: #666;
+    border-radius: 10px;
+}
+
+.principal {
+    grid-area: principal;
+    background-color: #dedede;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-around;
+    height: 320px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 0px 0px 0px 80px;
+
+}
+
+.rodape a {
+    display: block;
+    font-size: 0.9rem;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    width: fit-content;
+}
+
+.rodape > div.imagens {
+    display: block;
+    padding: 20px 100px 0px 0px;
+    text-align: top;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+a {
+    font-size: 17px;
+}
+
+a:hover{
+    background-color: #dedede;
+    border-radius: 5px;
+    color: black;
+    width: fit-content;
+}
